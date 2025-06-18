@@ -1,5 +1,7 @@
 import os
 # Konfig klasörünü geçici alan olarak ayarlıyoruz
+os.environ["STREAMLIT_SUPPRESS_CONFIG_ERRORS"] = "1"
+os.environ["STREAMLIT_RUNTIME_METRICS_ENABLED"] = "0"
 os.environ["XDG_CONFIG_HOME"] = "/tmp/app_config"
 os.environ["STREAMLIT_SUPPRESS_CONFIG_WARNINGS"] = "1"
 os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
